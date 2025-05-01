@@ -1,0 +1,9 @@
+[build]
+  command = "CI= npm run build"  # The CI= prefix disables warnings as errors
+  publish = "build"
+  functions = "src/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
